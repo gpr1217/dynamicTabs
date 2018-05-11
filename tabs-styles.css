@@ -1,0 +1,228 @@
+/************** Main tabs styles **************/
+* {
+  box-sizing: border-box;
+}
+body{
+	overflow-x:hidden;
+	overflow-y:hidden;
+	margin:0px;
+	font-family: sans-serif;
+}
+.btns_div{
+	float:left;
+	display:inline-block;
+	margin-bottom:10px;	
+}
+#btn_addtab{
+	margin-right:10px;
+}
+
+#btn_back{
+	display:none;
+	margin-right:10px;
+}
+.settings{
+	display:none;
+}
+.settings div{
+	font-size: 20px;
+}
+
+.divID {
+	clear: both;
+	border-top:0px;
+	border-left: solid 1px #cddde7;
+	border-right: solid 1px #cddde7;
+	border-bottom: solid 1px #cddde7;
+	border-radius:0px;
+}
+
+.tabs_row{
+	width:100%;
+	float:left;
+}
+.tabs{
+	margin: 0;
+	padding: 0px;
+	 display:table;
+	width:100%;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+#tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	border-bottom: solid 1px #cddde7;
+	display:table;
+	width:100%;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+#tabs li {
+	display:table-cell;
+	float: left;
+	position: relative;
+	color: #999;
+	cursor: pointer;
+	-moz-user-select: none;
+	border-top: 1px solid #cddde7;
+	border-left: solid 1px #cddde7;
+	border-right: solid 1px #cddde7;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;	
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;	
+	list-style: outside none none;
+	padding: 6px 0 0;	
+	text-align: center;
+	top: 1px;
+	width: 150px;
+	height: 30px;
+}
+
+@media only screen and (max-width: 1000px){
+	#tabs li {width: 140px;}
+}
+@media only screen and (min-width: 1000px){
+	#tabs li {width: 150px;}
+}
+
+#tabs li a {
+	color: #9c9c9c;
+	text-decoration: none;
+}
+
+#tabs li img.tabimage { 
+	float: left;
+	margin-left: 16px;
+}
+
+#tabs li a span {
+	float: left;
+	padding-left: 6px;
+}
+
+#tabs li.current span {
+	font-weight: bold;
+	border-bottom: transparent;
+}
+
+#tabs li.current {
+	border-bottom: transparent;
+}
+
+#tabs li.current a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: transparent;
+}
+
+/** close icon styles **/
+#tabs li img#btn_close{
+	width: 15px;
+    height: 17px;
+    margin-left: 80px;	
+}
+
+#tabs li img.nodisplay{
+	display:none;
+}
+
+#tabs li img.display{
+	display:block;
+}
+
+/*
+
+#tabs li img.remove {
+	color: #f00;
+	display: none;
+}
+
+#tabs li.current img.remove,#tabs li:hover img.remove {
+	color: #f00;
+	display: block;
+	float: right;
+	padding-right: 11px;
+}
+
+#tabs li img.remove {
+	width: 15px;
+	height: 14px;
+	margin-right: 9px;
+}*/
+
+/** END OF close icon styles **/
+#content p {
+	margin: 0;
+	padding: 20px 20px 100px 20px;
+}
+
+#wrapper,#doclist {
+	float: left;
+}
+
+#doclist {
+	width: 150px;
+	/*border-right: solid 1px #dcdcdc;*/
+}
+
+#doclist ul {
+	margin: 0;
+	list-style: none;
+}
+
+#doclist li {
+	margin: 10px 0;
+	padding: 0;
+}
+
+#wrapper {
+	clear: none;
+	/*margin-left: 5px;*/
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+/************** END of Main tabs styles **************/
+
+/************** More Section styles **************/
+li#last_tab {
+    position: relative;
+    display: inline-block;
+}
+ul#more_tabs{
+	display:none;
+}
+
+li#last_tab:hover{
+	color:#000;
+}
+
+li#last_tab:hover ul#more_tabs {
+	display: block;	
+    position: fixed;
+    top: auto;
+    left: 86%;
+    width: inherit;
+	margin-top:7px;
+	margin-right:20px;
+}
+
+li#last_tab:hover ul#more_tabs li{
+	border-radius:0px;	
+	border-bottom:1px solid #cddde7;	
+}
+
+li#last_tab:hover ul#more_tabs li:hover{
+	font-size:bold;
+	color:#red;	
+}
+
+
+

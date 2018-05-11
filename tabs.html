@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../tabs_lib/jquery-1.4.min.js"></script>
+<script src="../tabs_lib/dynamic-tabs.js" ></script>
+<link rel='stylesheet' type='text/css' href="../tabs_lib/tabs-styles.css" />
+</head>
+<body>
+<div width="100%" class="btns_div" >
+	<input type="button" id="btn_addtab" value="Add Tab" onClick="addNewtab()" />
+	<input type="button" id="btn_back" value="Back" onClick="backToTabs()" />
+	<input type="button" id="btn_settings" value="Settings" onClick="viewSettings()" />
+</div>
+</br>
+<div id="wrapper" width="100%">	
+	<div class="tabs_row" id="tabs_row">
+		<ul id="tabs" class="tabs"> 
+		
+		</ul>
+	</div>
+	<div id="divID" class="divID">
+		<div id="content" class="content">
+		</div>
+	</div>		
+	<div id="settings" class="settings" >
+		<h3>Tabs Settings</h3>
+		<div class="refresh-on-tab">
+			<input type="checkbox" id="refresh_check" value="refresh" onClick="changeSettings(this)" /> Refresh content on clicking tab
+		</div>
+		<div class="reopen-tabs">
+			<input type="checkbox" id="reopen_check" value="reopen" onClick="changeSettings(this)" /> Auto re-open previously viewed/opened tabs on reloading browser
+		</div>
+		<div class="refresh-when-reclick">
+			<input type="checkbox" id="refresh_reclick_check" value="reclick" onClick="changeSettings(this)" /> Refresh content on tab when re-clicking the button or link
+		</div>
+	</div>	
+</div>
+</body>
+</html>
